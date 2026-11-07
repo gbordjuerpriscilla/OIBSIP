@@ -34,7 +34,7 @@ public class ATM {
         for (int attempt = 1; attempt <= MAX_LOGIN_ATTEMPTS; attempt++) {
             System.out.print("\nEnter User ID: ");
             String id = scanner.nextLine().trim();
-            System.out.print("Enter PIN: ");
+            System.out.print("Enter your PIN: ");
             String pin = scanner.nextLine().trim();
 
             Account account = bank.authenticate(id, pin);
